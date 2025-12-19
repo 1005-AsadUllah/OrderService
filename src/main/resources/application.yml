@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:3306/order
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/orderdb
     username: root
     password: root1234
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,11 +21,11 @@ spring:
 
 product:
   service:
-    url: ${PRODUCT_SERVICE:http://product-service:8082/product}
+    url: http://product-service-svc/product/
 
 payment:
   service:
-    url: ${PAYMENT_SERVICE:http://payment-service:8081/payment}
+    url: http://payment-service-svc/payment/
 
 
 resilience4j:
