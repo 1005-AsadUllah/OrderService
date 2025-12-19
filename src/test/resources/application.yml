@@ -25,11 +25,11 @@ spring:
 
 product:
   service:
-    url: http://localhost:8082/product
+    url: http://product-service-svc/product/
 
 payment:
   service:
-    url: http://localhost:8081/payment
+    url: http://payment-service-svc/payment/
 
 management:
   tracing:
